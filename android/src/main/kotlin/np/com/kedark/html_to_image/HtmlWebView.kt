@@ -161,6 +161,7 @@ class HtmlWebView(
             Bitmap.Config.ARGB_8888
         )
         val canvas = Canvas(bitmap)
+        canvas.drawColor(Color.TRANSPARENT); // Fills the background with a transparent color
         canvas.scale(1 / currentScale, 1 / currentScale)
         if (useDeviceScaleFactor) {
             canvas.scale(density, density)

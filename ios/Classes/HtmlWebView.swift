@@ -60,6 +60,9 @@ class HtmlWebView: NSObject, WKNavigationDelegate, UIScrollViewDelegate {
             ),
             configuration: getConfig()
         )
+        self.webView.isOpaque = false
+        self.webView.backgroundColor = UIColor.clear
+        self.webView.scrollView.backgroundColor = UIColor.clear
         self.webView.navigationDelegate = self
         self.webView.scrollView.delegate = self
         self.webView.isHidden = true
