@@ -25,6 +25,8 @@ class HtmlWebView(
     init {
         configureWebViewSettings()
         this.webViewClient = client
+        this.setBackgroundColor(Color.TRANSPARENT)
+        this.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null)
         this.loadDataWithBaseURL(null, client.content, "text/HTML", "UTF-8", null)
     }
 
