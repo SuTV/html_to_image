@@ -208,8 +208,8 @@ class HtmlWebView: NSObject, WKNavigationDelegate, UIScrollViewDelegate {
         )
         let context = UIGraphicsGetCurrentContext()!
 
-        // Fill the background with white
-        context.setFillColor(UIColor.white.cgColor)
+        // Fill the background with transparent
+        context.setFillColor(UIColor.clear.cgColor)
         context.fill(CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
 
         // Draw the original image with margins
